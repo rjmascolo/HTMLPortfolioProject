@@ -5,22 +5,22 @@ header{
   position:fixed;
   top:0;
   width:100%;
-  height:20%;
+  height: auto;
   background-color: white;
   overflow: hidden;
-  border-bottom: 1px solid black;
+  border-bottom: .1em solid black;
 }
 aside {
   width:25%;
   float:right;
   position: fixed;
   right: 2em;
-  border: 1px solid black;
+  border: .1em solid black;
   background-color: white;
 }
 section {
   width: 65%;
-  margin-top: 16%;
+  margin-top: 10em;
   padding-left: 3em;
   background-color: white;
   padding-right: 1.75em;
@@ -39,7 +39,7 @@ body {
 }
 /*/// HEADER ///*/
 header img {
-  height:100px;
+  height:1em;
 }
 
 header h1 {
@@ -69,7 +69,7 @@ nav>ul{
   color:black;
   text-align:center;
   text-decoration: none;
-  padding: 14px 16px;
+  padding: .3em .3em;
   font-family: 'Geo';
   font-size: 1.75em;
   background-color:white;
@@ -79,7 +79,7 @@ nav>ul{
   color:white;
   text-align:center;
   text-decoration: none;
-  padding: 14px 16px;
+  padding: .3em .3em;
   font-family: 'Geo';
   font-size: 1.75em;
   background-color:gray;
@@ -105,7 +105,19 @@ aside p {
   margin-left: .5em;
 }
 
+aside h2 {
+  font-family: 'Geo', sans-serif;
+  font-size: 1.9em;
+  text-align:center;
+}
+
 /* ////// SECTION ///// */
+#job_history {
+  font-family: 'Geo', sans-serif;
+  font-size: 4em;
+  text-align: center;
+  margin: 0 auto.5em auto
+}
 .company {
   font-family: 'Geo', sans-serif;
   font-size: 3em;
@@ -169,4 +181,34 @@ footer p {
   padding: 2em 0 1em 0;
   font-family: 'Geo', sans-serif;
   font-size: 1.5em;
+}
+
+/* ///////MEDIA QUERIES ////////*/
+@media screen and (max-width: 482px) {
+   /*////// Mobile Layout //////*/
+  header {
+    height: 30%;
+    z-index: 1;
+    width:100%
+  }
+  header h1{
+    margin: 0 0 0 0;
+    line-height:
+  }
+  aside {
+    float: none;
+    width: 100%;
+    margin-top: 50%;
+    position:relative;
+    right: 0;
+    margin-bottom: 1em;
+  }
+  section{
+    width: 100%;
+    padding-left: .1em;
+    margin-top: 0;
+  }
+.annoying_div{
+    margin-top:1.5em;
+  }
 }
